@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {{#if listaInfo.length}}
+                <div class="wrapper">
+                    <table class="table table-hover tablaproductos">
+                        <thead>
+                            <tr>
+                                <th scope="col">Dato</th>
+                                <th  class="text-center" scope="col">Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each listaInfo}}
+                            <tr>
+                                <td valign="middle">{{this.nombre}}</td>
+                                <td valign="middle" class="text-center">{{this.detalle}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                {{else}}
+                <div class="wrapper text-center">
+                    <h2>No hay información para mostrar</h2>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
