@@ -30,26 +30,3 @@ loginRouter.get('/failed', failedLogin);
 module.exports = {
     loginRouter
 }
-
-/*
-
-FacebookStrategy({
-        passReqToCallback: true
-    },
-    (req, username, password, done) => {
-        UsuarioModelo.findOne({'username': username}, (err,user) => {
-            if (err) {
-                return done(err);
-            }
-            if (!user) {
-                return done(null, false, console.log('Usuario no encontrado'));
-            }
-            if (!isValidPassword(user, password)) {
-                return done(null, false, console.log('Invalid password'));
-            }
-            return done(null, user);
-        })
-    }
-)
-
-*/

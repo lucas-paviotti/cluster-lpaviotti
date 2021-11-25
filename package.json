@@ -4,7 +4,7 @@
   "description": "Servidor Express de Lucas Paviotti",
   "main": "server.es6.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon --ignore db/ --ignore node_modules/ server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "forever": "forever start server.js && forever list",
     "forever-watch": "forever start -w server.js && forever list",
