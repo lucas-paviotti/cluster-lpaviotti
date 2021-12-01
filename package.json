@@ -9,8 +9,8 @@
     "forever": "forever start server.js && forever list",
     "forever-watch": "forever start -w server.js && forever list",
     "pm2": "pm2 start server.js",
+    "pm2-cluster": "pm2 start server.js -i max -f",
     "pm2-watch": "pm2 start ecosystem.config.js"
-
   },
   "author": "Lucas Paviotti",
   "license": "ISC",
